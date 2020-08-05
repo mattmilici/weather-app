@@ -67,6 +67,7 @@
         .forecastCard {
             background-color: #3282b8;
             margin: 1%;
+            color: white;
         }
         
         #centerDiv {
@@ -96,5 +97,8 @@
                 display: block;
                 margin: 0;
             }
-            /* For mobile phones: */
+            .forecastCard {
+                margin: 2% 10%;
+                text-align: center;
+            }
         }
