@@ -2,12 +2,10 @@ $(document).ready(function() {
 
     // --------------------------- Global Variables ---------------------------
     var userTopCitiesArray = JSON.parse(localStorage.getItem("userCities")) || [];
-    var userSearch = $("#cityInput").val()
+    var userSearch = $("#cityInput ").val()
 
     // --------------------------- Event Listeners ---------------------------
     $("#submitButton").on("click", callCityData)
-
-
 
     // --------------------------- Gathers first five cities on the users Array List ---------------------------
     favriteCities()
@@ -17,8 +15,6 @@ $(document).ready(function() {
 
     // --------------------------- updates the users main city view ---------------------------
     function callCityData() {
-
-
         if (userSearch !== "") {
             userSearch = $("#cityInput").val()
         } else if (userTopCitiesArray > 0) {
@@ -68,6 +64,14 @@ $(document).ready(function() {
             $(cityNumber).text(userTopCitiesArray[i])
         }
 
+    }
+
+
+    $(".cityName").on("click", cityHistoryButton)
+
+    function cityHistoryButton() {
+        $("#cityInput").val($(this).text())
+        callCityData()
     }
 
 
