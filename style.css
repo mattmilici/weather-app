@@ -36,6 +36,16 @@
         }
         
         .cityCard {
+            border-right: 1px solid #3282b8;
+            border-left: 1px solid #3282b8;
+            border-bottom: 1px solid #3282b8;
+        }
+        
+        .cityCard:hover {
+            font-weight: bolder;
+        }
+        
+        .cityCard1 {
             border: 1px solid #3282b8;
         }
         

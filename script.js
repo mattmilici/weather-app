@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     // --------------------------- Global Variables ---------------------------
     var userTopCitiesArray = JSON.parse(localStorage.getItem("userCities")) || [];
-
+    var userSearch = $("#cityInput").val()
 
     // --------------------------- Event Listeners ---------------------------
     $("#submitButton").on("click", callCityData)
@@ -12,10 +12,19 @@ $(document).ready(function() {
     // --------------------------- Gathers first five cities on the users Array List ---------------------------
     favriteCities()
 
+    // --------------------------- Populates main screen with users most recent searched city ---------------------------
+    callCityData()
 
     // --------------------------- updates the users main city view ---------------------------
     function callCityData() {
-        var userSearch = $("#cityInput").val()
+
+
+        if (userSearch !== "") {
+            userSearch = $("#cityInput").val()
+        } else if (userTopCitiesArray > 0) {
+            userSearch = userTopCitiesArray[0]
+        } else { userSearch = "greensburg" }
+
         values = userSearch.split(', ');
         let userCity = values[0];
         let userState = values[1];
@@ -26,7 +35,6 @@ $(document).ready(function() {
                 method: "GET",
 
             }).then(function(response) {
-
 
                 let cityName = response.name;
                 let cityTemp = response.main.temp;
