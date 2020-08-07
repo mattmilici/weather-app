@@ -115,12 +115,3 @@ $(document).ready(function() {
         callCityData();
     }
 });
-
-{
-    /* <div class="forecastCard col-lg-2 ">
-<p class="forecastDate0"></p>
-<p class="ForecastIcon0"></p>
-<p class="temp">Temp <span id="forecastTemp0"></span> &#8457</p>
-<p class="temp">Humiditiy <span class="forecastHumidity0"></span></p>
-</div> */
-}

@@ -78,6 +78,8 @@ form {
     background-color: #3282b8;
     margin: 1%;
     color: white;
+    border-radius: 10px;
+    text-align: center;
 }
 
 .img {
@@ -119,4 +121,8 @@ form {
 
 .currentCityBracket {
     font-size: 1.9rem;
+}
+
+.forecastDateHeader {
+    margin-top: 10%;
 }
