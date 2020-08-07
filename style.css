@@ -7,6 +7,7 @@
 }
 
 #asideDiv {
+    border-radius: 10px;
     width: 30%;
     padding: 15px 15px;
     margin: 15px 15px;
@@ -95,8 +96,17 @@ form {
 }
 
 #currentCityDisplay {
+    border-radius: 10px;
     background-color: #bbe1fa;
     padding: 2%;
+    margin-bottom: 4%;
+}
+
+@media only screen and (max-width: 1385px) {
+    .forecastCard {
+        margin: 2% 20%;
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 768px) {
