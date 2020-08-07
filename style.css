@@ -1,118 +1,122 @@
-        #headerDiv {
-            color: white;
-            font-weight: bolder;
-            background-color: #005086;
-            padding: 1.75% 0;
-            text-align: center;
-        }
-        
-        #asideDiv {
-            width: 30%;
-            padding: 15px 15px;
-            margin: 15px 15px;
-            float: left;
-            font-style: italic;
-            background-color: #bbe1fa;
-        }
-        
-        #searchLabel {
-            font-weight: bold;
-            margin-bottom: 1%;
-            font-size: 1.2rem;
-        }
-        
-        #cityInput {
-            width: 60%;
-        }
-        
-        #submitButton {
-            float: right;
-            margin-left: 1%;
-        }
-        
-        form {
-            margin-top: 2%;
-            margin-bottom: 8%;
-        }
-        
-        .cityCard {
-            border-right: 1px solid #3282b8;
-            border-left: 1px solid #3282b8;
-            border-bottom: 1px solid #3282b8;
-        }
-        
-        .cityCard:hover {
-            font-weight: bolder;
-        }
-        
-        .cityCard1 {
-            border: 1px solid #3282b8;
-        }
-        
-        .cityName {
-            padding: 2% 1%;
-            margin: auto;
-            margin-left: 2%;
-            align-items: center;
-            align-content: center;
-            font-size: 1.5rem;
-        }
-        
-        #mainDiv {
-            margin-top: 15px;
-            padding-left: 1%;
-            padding-right: 0;
-        }
-        
-        #headerText {
-            border-bottom: solid 2px #005086;
-            margin-bottom: 5%;
-            padding-bottom: 1%;
-        }
-        
-        .weatherCard {
-            margin-bottom: 2%;
-        }
-        
-        .forecastCard {
-            background-color: #3282b8;
-            margin: 1%;
-            color: white;
-        }
-        
-        .img {
-            float: right;
-        }
-        
-        #centerDiv {
-            margin: 0;
-        }
-        
-        #fiveDayForecast {
-            margin-top: 5%;
-        }
-        
-        #currentCityDisplay {
-            background-color: #bbe1fa;
-            padding: 2%;
-        }
-        
-        @media only screen and (max-width: 768px) {
-            #asideDiv {
-                width: 100%;
-                text-align: center;
-            }
-            #cityInput {
-                text-align: center;
-                margin: auto;
-                display: block;
-            }
-            #submitButton {
-                display: block;
-                margin: 0;
-            }
-            .forecastCard {
-                margin: 2% 10%;
-                text-align: center;
-            }
-        }
+#headerDiv {
+    color: white;
+    font-weight: bolder;
+    background-color: #005086;
+    padding: 1.75% 0;
+    text-align: center;
+}
+
+#asideDiv {
+    width: 30%;
+    padding: 15px 15px;
+    margin: 15px 15px;
+    float: left;
+    font-style: italic;
+    background-color: #bbe1fa;
+}
+
+#searchLabel {
+    font-weight: bold;
+    margin-bottom: 1%;
+    font-size: 1.2rem;
+}
+
+#cityInput {
+    width: 60%;
+}
+
+#submitButton {
+    float: right;
+    margin-left: 1%;
+}
+
+form {
+    margin-top: 2%;
+    margin-bottom: 8%;
+}
+
+.cityCard {
+    border-right: 1px solid #3282b8;
+    border-left: 1px solid #3282b8;
+    border-bottom: 1px solid #3282b8;
+}
+
+.cityCard:hover {
+    font-weight: bolder;
+}
+
+.cityCard1 {
+    border: 1px solid #3282b8;
+}
+
+.cityName {
+    padding: 2% 1%;
+    margin: auto;
+    margin-left: 2%;
+    align-items: center;
+    align-content: center;
+    font-size: 1.5rem;
+}
+
+#mainDiv {
+    margin-top: 15px;
+    padding-left: 1%;
+    padding-right: 0;
+}
+
+#headerText {
+    border-bottom: solid 2px #005086;
+    margin-bottom: 5%;
+    padding-bottom: 1%;
+}
+
+.weatherCard {
+    margin-bottom: 2%;
+}
+
+.forecastCard {
+    background-color: #3282b8;
+    margin: 1%;
+    color: white;
+}
+
+.img {
+    float: right;
+}
+
+#centerDiv {
+    margin: 0;
+}
+
+#fiveDayForecast {
+    margin-top: 5%;
+}
+
+#currentCityDisplay {
+    background-color: #bbe1fa;
+    padding: 2%;
+}
+
+@media only screen and (max-width: 768px) {
+    #asideDiv {
+        width: 100%;
+        text-align: center;
+    }
+    #cityInput {
+        text-align: center;
+        margin: auto;
+        display: block;
+    }
+    #submitButton {
+        display: block;
+        margin: 0;
+    }
+    .forecastCard {
+        margin: 2% 10%;
+        text-align: center;
+    }
+}
+
+.currentCityBracket {
+    font-size: 1.9rem;
+}

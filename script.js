@@ -51,6 +51,12 @@ $(document).ready(function() {
                 $("#currentCityHumidity").text(humidity);
                 $("#currentCityWind").text(windSpeed);
 
+                let currentDateNumber = response.dt;
+                var CurrentTimestap = moment
+                    .unix(currentDateNumber)
+                    .format("MM/DD/YYYY");
+                $(".currentCityDate").text(CurrentTimestap);
+
                 userTopCitiesArray.unshift(cityName);
                 localStorage.setItem("userCities", JSON.stringify(userTopCitiesArray));
 
