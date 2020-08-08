@@ -44,7 +44,7 @@ $(document).ready(function() {
                 console.log(response);
 
                 let iconCode = response.weather[0].icon;
-                let iconurl = "http://openweathermap.org/img/wn/" + iconCode + ".png";
+                let iconurl = "https://openweathermap.org/img/wn/" + iconCode + ".png";
 
                 $("#currentIcon").attr("src", iconurl);
 
