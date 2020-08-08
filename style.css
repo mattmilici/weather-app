@@ -127,6 +127,9 @@ form {
         margin: 2% 10%;
         text-align: center;
     }
+    #currentCityHeader {
+        display: block;
+    }
 }
 
 .currentCityBracket {
