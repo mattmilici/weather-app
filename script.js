@@ -60,7 +60,7 @@ $(document).ready(function() {
                 cityLat = response.coord.lat;
                 cityLon = response.coord.lon;
                 $.ajax({
-                    url: "http://api.openweathermap.org/data/2.5/onecall?lat=" +
+                    url: "https://api.openweathermap.org/data/2.5/onecall?lat=" +
                         cityLat +
                         "&lon=" +
                         cityLon +
@@ -89,7 +89,7 @@ $(document).ready(function() {
                         // ---------------------------forecasted icon ---------------------------
                         let forecastIcon = response.daily[f].weather[0].icon;
                         let forecastIconURL =
-                            "http://openweathermap.org/img/wn/" + forecastIcon + ".png ";
+                            "https://openweathermap.org/img/wn/" + forecastIcon + ".png ";
                         $(forecastIconId).attr("src", forecastIconURL);
                         // ---------------------------forecasted temp ---------------------------
                         let forecastTemp = response.daily[f].temp.day;

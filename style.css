@@ -102,7 +102,7 @@ form {
     margin-bottom: 4%;
 }
 
-@media only screen and (max-width: 1385px) {
+@media only screen and (max-width: 1330px) {
     .forecastCard {
         margin: 2% 20%;
         text-align: center;
