@@ -30,7 +30,7 @@ $(document).ready(function() {
 
         if (userSearch !== "") {
             $.ajax({
-                url: "http://api.openweathermap.org/data/2.5/weather?q=" +
+                url: "https://api.openweathermap.org/data/2.5/weather?q=" +
                     userCity +
                     "," +
                     userState +
