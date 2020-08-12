@@ -72,6 +72,14 @@ $(document).ready(function() {
                         let todayUVI = response.daily[0].uvi;
                         $("#currentCityUV").text(todayUVI);
 
+                        if (todayUVI > 7) {
+                            $("#currentCityUV").css("background-color", "red");
+                        } else if (todayUVI < 4) {
+                            $("#currentCityUV").css("background-color", "green");
+                        } else {
+                            $("#currentCityUV").css("background-color", "blue");
+                        }
+
                         let currentDateNumber = response.daily[0].dt;
                         var CurrentTimestap = moment
                             .unix(currentDateNumber)
